@@ -1240,7 +1240,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // slogan
   if (s.slogan) document.getElementById('hero-slogan').textContent = s.slogan;
   // whatsapp
-  const wa = s.whatsapp ? 'https://wa.me/' + s.whatsapp : 'https://wa.me/55';
+  const wa = s.whatsapp ? 'https://wa.me/' + s.whatsapp : 'https://wa.me/5516994133158';
   document.getElementById('nav-whatsapp').href = wa;
   document.getElementById('hero-whatsapp').href = wa;
   document.getElementById('community-whatsapp').href = wa;
@@ -1260,7 +1260,7 @@ function renderProducts() {
     return;
   }
   const s = getSettings();
-  const wa = s.whatsapp ? 'https://wa.me/' + s.whatsapp : 'https://wa.me/55';
+  const wa = s.whatsapp ? 'https://wa.me/' + s.whatsapp : 'https://wa.me/5516994133158';
   products.forEach(p => {
     const isBase64 = p.img && (p.img === DEFAULT_IMG1 || p.img === DEFAULT_IMG2 || p.img === DEFAULT_IMG3);
     const imgSrc = isBase64 ? 'data:image/jpeg;base64,' + p.img : (p.img || '');
@@ -1413,7 +1413,7 @@ function saveSettings() {
   if (pw) s.password = pw;
   saveSettingsData(s);
   // update UI
-  const waLink = wa ? 'https://wa.me/' + wa : 'https://wa.me/55';
+  const waLink = wa ? 'https://wa.me/' + wa : 'https://wa.me/5516994133158';
   document.getElementById('nav-whatsapp').href = waLink;
   document.getElementById('hero-whatsapp').href = waLink;
   document.getElementById('community-whatsapp').href = waLink;
